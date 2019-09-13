@@ -15,7 +15,6 @@ function App() {
     useEffect(() => {
       axios.get('http://localhost:3333/smurfs')
         .then(response => {
-          console.log(response)
           setSmurfs(response.data);
         })
     }, [])
